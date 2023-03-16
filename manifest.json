@@ -1,0 +1,35 @@
+{
+   "action": {
+      "default_icon": {
+         "16": "img/icon16.png"
+      }
+   },
+   "author": ["Javad Motallebi", "Berken Eren Usar"],
+   "background": {
+      "service_worker": "bg.js"
+   },
+   "content_scripts": [ {
+      "all_frames": true,
+      "js": [ "ct.js" ],
+      "matches": [ "http://*/*", "https://*/*" ],
+      "run_at": "document_start"
+   } ],
+   "description": "Sends Download Links to Neat Download Manager",
+   "homepage_url": "https://www.neatdownloadmanager.com/",
+   "host_permissions": [ "\u003Call_urls>" ],
+   "icons": {
+      "128": "img/icon128.png",
+      "16": "img/icon16.png",
+      "48": "img/icon48.png"
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAz0KZ9wDknggIqdwLwOUoJZjEOS38gNqHFsVWJqdYzqbJpbL4TowiZolT2m9ErEvx5bNy+sFjnM0rjXoSlMHbPGp0ZJgfaIpV0xA8GZB45G3HDmwji/dpRaDBiluwPuGwwA8VMmu2kko+qN1O50lLFv7VVj6/AloRWMnTRS5a4Nsk1wkJQY16DBIS2qzg3onvmOQm7uSKfbRhQuU4Nkabt0QaprA3O87jQ0LHLL580V5TJNG00ka0mX46H7Sy/nn+3XQqS/hVkD0gujgLTGo/9CEjaJVstBHCYEiJ8GD/UzZEP852T0gU8sFTGjaRUD3OcDcAyN9qV8YG1oaZN+v6aQIDAQAB",
+   "manifest_version": 3,
+   "name": "NeatDownloadManager Extension",
+   "permissions": [ "webRequest", "webNavigation", "cookies", "contextMenus", "storage", "downloads" ],
+   "update_url": "https://edge.microsoft.com/extensionwebstorebase/v1/crx",
+   "version": "1.0.0",
+   "web_accessible_resources": [ {
+      "matches": [ "\u003Call_urls>" ],
+      "resources": [ "img/icon16.png", "img/icon16_2x.png", "img/close16.png", "img/close16_2x.png" ]
+   } ]
+}
