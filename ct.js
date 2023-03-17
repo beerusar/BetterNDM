@@ -240,11 +240,11 @@ O.L = function(d) {
     this.h ? this.v() : (this.h = document.createElement("DIV"), this.h.style.cssText = "padding:0px;margin:0px;position:" + c + ";z-index:100000000;width:210px;left:" + this.position.left + "px;top:" + this.position.top + "px;direction:ltr;text-align:center;line-height:100% !important;", this.h.id = "neatDiv" +
         this.ua, this.h.style.display = this.D.H ? "" : "none", document.body.appendChild(this.h), b = document.createElement("TABLE"), b.id = this.J, b.style.cssText = "border-spacing:0px;border-collapse:separate;padding:0px;margin:0px;line-height:100% !important;direction:ltr;width:100%;", this.h.appendChild(b), this.G(g.h, "mousemove", g.wa), this.G(g.h, "mousedown", g.va), this.G(g.h, "mouseup", g.T), this.G(g.h, "mouseout", g.xa), this.G(g.h, "mouseover", g.ya), this.j = setTimeout(function() {
                 g.j = null;
-                d.h.style.opacity = 0.45;
-                for (row of d.h.firstChild.rows) {
+                this.h.style.opacity = 0.45;
+                for (row of this.h.firstChild.rows) {
                   row.firstChild.style.backdropFilter = "blur(8px)";
                 }
-                d.h.style.borderRadius = "8px 8px 0px 0px";
+                this.h.style.borderRadius = "8px 8px 0px 0px";
             },
             3E4));
     if (!(-1 < this.items.indexOf(d) && "hls" != a["6"])) {
